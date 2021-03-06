@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Css ku -->
     <link rel="stylesheet" href="style.css">
+    <!-- bagian reveal javascript -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <title>Hello, world!</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-container sticky-top">
         <div class="container mt-2 mb-2">
-            <a class="navbar-brand" href="#" id="ityped"></a>
-            <script src="https://unpkg.com/ityped@1.0.2"></script>
+            <a class="navbar-brand" href="#"><img src="image/logo.png" width="180" height="30" alt=""></a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,9 +28,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-link active" href="#">About</a>
-                    <a class="nav-link active" href="#">Browse</a>
-                    <a class="nav-link active" href="#">Testimonials</a>
-                    <a class="nav-link active" href="#">Contact Us</a>
+                    <a class="nav-link active" href="#hero2">Browse</a>
+                    <a class="nav-link active" href="#testimoni">Testimonials</a>
+                    <a class="nav-link active" href="#form">Contact Us</a>
                     <!-- buttons login -->
                     <a class="btn shadow-none" type="button" href="#">Login</a>
                     <!-- akhir button -->
@@ -97,7 +99,7 @@
         </div>
     </section>
     <!-- Hero 2 -->
-    <section id="hero2">
+    <section id="testimoni">
         <div class="jumbotron jumbotron-fluid bg-container mt-5">
             <div class="container">
                 <div class="row justify-content-center">
@@ -123,12 +125,88 @@
                             <p class="kesimpulan">“The platform really helps me as a freelance designer. I can do varius job from anywhere. Work easier in front of the laptop.”</p>
                         </div>
                     </div>
-
+                    <!-- button see more -->
+                    <div class="row jarak-button-see">
+                        <div class="col-md-auto">
+                            <button type="button" class="btn btn-warning shadow-none">See More</button>
+                        </div>
+                    </div>
+                    <!-- akhir button -->
                 </div>
             </div>
     </section>
+    <!-- bagian form -->
+    <section id="form">
+        <div class="container-fluid bg-container jarak-atas tinggi-form">
+            <div class="row justify-content-center">
+                <div class="col-md-4 sm-12 jarak-col">
+                    <h2 class="interest">Interest ? <br>Join & Get a Job As Wish You</h2>
+                    <p class="join mb-5">Join and be ine of the thousands of lucky people. Achieve a success with baby steps first</p>
+                    <button type="button" class="btn btn-warning shadow-none ukuran-send">Send</button>
+                </div>
+                <!-- bagian form -->
+                <div class="col-md-6 col-sm-12 jarak-col-form">
+                    <form>
+                        <!-- bagian masukkan nama dan email -->
+                        <div class="form-group form-inline col-sm-12">
+                            <textarea class="form-control textarea-nama col-md-5 col-sm-6" placeholder="Enter Your Name" id="exampleFormControlTextarea1" rows="1"></textarea>
+                            <!-- bagian email -->
+                            <input type="email" class="form-control ml-5 email  col-md-5 col-sm-6" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+                        </div>
 
-    <!-- Akhir Hero -->
+                        <!-- bagian teks area -->
+                        <div class="form-group mt-5 col-sm-12">
+                            <textarea class="form-control text-area" placeholder="Enter Your Message" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-warning shadow-none ukuran-send jarak-send">Send</button>
+                    </form>
+                </div>
+    </section>
+    <!-- Bagian Hero Akhir -->
+    <section id="copyright">
+        <div class="jumbotron jumbotron-fluid bg-white">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-md-2">
+                        <p class="heading">Using FINDWORK</h2>
+                            <p class="anak-heading mt-4">How It Works</p>
+                            <p class="anak-heading">Trust & Safety</p>
+                            <p class="anak-heading">Experiences Level</p>
+                            <p class="anak-heading">Rating</p>
+                            <p class="anak-heading">Member Sceement</p>
+                            <p class="anak-heading">Insurance</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="heading">Our Company</h2>
+                            <p class="anak-heading  mt-4">About Us</p>
+                            <p class="anak-heading">Findworks Life</p>
+                            <p class="anak-heading">Press</p>
+                            <p class="anak-heading">Partners</p>
+                            <p class="anak-heading">Contact Us</p>
+
+                    </div>
+                    <div class="col-md-2">
+                        <p class="heading">Legal</h2>
+                            <p class="anak-heading  mt-4">Term & Condition</p>
+                            <p class="anak-heading">Privacy Policy</p>
+                            <p class="anak-heading">Cookies Policy</p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="heading text-center">GET OUR Mobile App</div>
+                        <div class="img-playstore m-auto">
+                            <a href="#"><img src="image/play-store.png" class="img-playstore  mt-2"></a>
+                        </div>
+                        <div class="img-playstore m-auto">
+                            <a href="#"> <img src="image/app-store.png" class="img-playstore mt-2"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Lanjut bagian hero 2 yang bagian tulisann belum selesai -->
 
@@ -161,9 +239,22 @@
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <!-- Scrool Reveal -->
-    <script src="scroll-reveal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="smooth.js"></script>
+    <script>
+        ScrollReveal().reveal('.container', {
+            delay: 250
+        });
+        ScrollReveal().reveal('.container', {
+            duration: 500
+        });
+        ScrollReveal().reveal('.item', {
+            delay: 375,
+            reset: true
+        });
+    </script>
     <!-- ========== -->
-    <script src="typed.js"></script>
+    <script src="scroll-reveal.js"></script>
     <!-- ========== -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
